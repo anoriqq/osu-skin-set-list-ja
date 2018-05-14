@@ -1,0 +1,1651 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="test.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/ico/favicon.ico" type="image/vnd.microsoft.icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Skin Set List</title>
+</head>
+
+<body>
+
+  <div class="header" id="top">
+    <div class="header_bg">
+      <div class="header_bg_triangles"></div>
+      <div class="header_bg_overlay"></div>
+    </div>
+    <div class="header_center">
+      <div class="header_center_space"></div>
+      <div class="header_center_logo">
+        <div class="header_center_logo_top"></div>
+        <div class="header_center_logo_bg"></div>
+      </div>
+      <div class="header_menu">
+        <div class="header_menu_home"></div>
+        <div class="header_menu_beatmaps"></div>
+        <div class="header_menu_rankings"></div>
+        <div class="header_menu_community"></div>
+        <div class="header_menu_store"></div>
+        <div class="header_menu_help"></div>
+        <div class="header_menu_search"></div>
+      </div>
+      <div class="header_user"></div>
+    </div>
+  </div>
+
+  <div class="main">
+
+    <div class="main_title">
+      <div class="main_title_space">
+        <div class="main_title_space_char"></div>
+        <div class="main_title_space_github"></div>
+      </div>
+    </div>
+
+    <div class="pagetop">
+      <a href="#top" class="pagetop_link">
+        <span>TOP</span>
+      </a>
+    </div>
+
+    <div class="main_content">
+      <div class="main_content_space">
+
+        <div class="main_content_space_index">
+          <div class="main_content_space_index_title">
+            <h2 class="contents">Contents</h2>
+            <ol class="main_content_space_index_index">
+              <a href="#hello">はじめに</a>
+              <li class="main_content_space_index_index_osu">
+                <a href="#osu">osu!</a>
+                <ol class="link-table">
+                  <a class="index-link" href="#cursor">カーソル</a>
+                  <br>
+                  <a class="index-link" href="#hit-burst">ヒットバースト</a>
+                  <br>
+                  <a class="index-link" href="#combo-burst">コンボバースト</a>
+                  <br>
+                  <a class="index-link" href="#hit-circle">ヒットサークル</a>
+                  <br>
+                  <a class="index-link" href="#slider">スライダー</a>
+                  <br>
+                  <a class="index-link" href="#hit-circle-number">ヒットサークルナンバー</a>
+                  <br>
+                  <a class="index-link" href="#spinner">スピナー</a>
+                  <br>
+                  <a class="index-link" href="#scorebar">スコアバー(HPバー)</a>
+                  <br>
+                  <a class="index-link" href="#score-numbar">スコアナンバー</a>
+                  <br>
+                  <a class="index-link" href="#mod-icon">Modアイコン</a>
+                  <br>
+                  <a class="index-link" href="#play-field">プレイフィールド</a>
+                  <br>
+                  <a class="index-link" href="#input-overlay">インプットオーバーレイ</a>
+                  <br>
+                  <a class="index-link" href="#entry-numbar">エントリーナンバー</a>
+                  <br>
+                  <a class="index-link" href="#count">カウントダウン</a>
+                  <br>
+                  <a class="index-link" href="#section">セクションインジケーター</a>
+                  <br>
+                  <a class="index-link" href="#ranking">ランキンググレード</a>
+                  <br>
+                  <a class="index-link" href="#result">リザルト画面</a>
+                  <br>
+                  <a class="index-link" href="#pause">ポーズ画面</a>
+                  <br>
+                </ol>
+              </li>
+              <li class="main_content_space_index_index_interface">
+                <a href="#interface">インターフェース</a>
+                <ol class="link-table">
+                  <a class="index-link" href="#main-menu">メインメニュー</a>
+                  <br>
+                  <a class="index-link" href="#button">ボタン</a>
+                  <br>
+                  <a class="index-link" href="#offset">オフセットウィザード</a>
+                  <br>
+                  <a class="index-link" href="#selection">ソングセレクション</a>
+                  <br>
+                  <a class="index-link" href="#mode">モードセレクト</a>
+                  <br>
+                </ol>
+              </li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="main_content_space_content">
+          <div class="main_content_space_content_space">
+            <h2 id="hello">はじめに</h2>
+
+            <ul class="intro-ul">
+              <li class="intro-li">スキンを作成に関する日本語での解説が少なかったため書きました｡</li>
+              <li class="intro-li">スキンバージョン2.5で動作するもののみを記載しています｡</li>
+              <li class="intro-li">アスペクト比が16:9の環境での使用のみを考慮しています｡</li>
+              <li class="intro-li">ゲームの言語設定は日本語が前提です｡</li>
+              <li class="intro-li">osu!Standardを対象にしていますので,他のモードは考慮していません｡ただし,ゲームインターフェースに関しては記載しています｡</li>
+              <li class="intro-li">ファイル名末尾に<code>(n)</code>または<code>(-n)</code>と記載されているものがあります｡こちらのファイルは複数含めることが可能で,その場合nが小さい順番にアニメーションや表示されたりします｡もちろん単数で含めることも可能です｡</li>
+              <li class="intro-li">同じファイルを複数の場面で使い回すゲーム仕様となっているので,本ページではカテゴリを優先して目的のファイルを見つけやすいようにしています｡そのため,異なるカテゴリで使用されているファイルは各カテゴリに重複して記載されています｡該当ファイルに関しては
+                <b>※1</b>と併記してありますので,ご確認下さい｡</li>
+              <li class="intro-li">エディター専用のファイルも記載していません｡</li>
+              <li class="intro-li">表中原点の項目は素材の原点の位置を表し,()で記載がある場合は画面中の原点の座標になります｡FullHD(1920×1080px)での座標だということに注意してください｡</li>
+              <li class="intro-li">基本的には作者用なので作りが雑なところもあると思いますが大目に見てください｡</li>
+              <li class="intro-li">その他記述ミスやバージョンアップによる変更などで本書に不備がありましたら下の方にある連絡先までご連絡頂けると幸いです｡</li>
+            </ul>
+
+            <h2 id="osu">osu!</h2>
+            <h3 id="cursor">カーソル</h3>
+            <p class="topic">カーソルに関連する項目｡</p>
+            <table>
+              <thead>
+                <tr>
+                  <th class="file-name">ファイル名</th>
+                  <th class="note">解説</th>
+                  <th class="origin">原点</th>
+                  <th class="sd-size">サイズ</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="file-name">cursor.png</td>
+                  <td class="note">カーソル</td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">-</td>
+                </tr>
+                <tr>
+                  <td class="file-name">cursortrail.png</td>
+                  <td class="note">カーソルに追従する影</td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">-</td>
+                </tr>
+                <tr>
+                  <td class="file-name">cursormiddle.png</td>
+                  <td class="note">カーソルの上のレイヤー｡クリック時にカーソル を拡大する設定にしても拡大されない｡
+                  </td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">-</td>
+                </tr>
+                <tr>
+                  <td class="file-name">cursor-smoke.png</td>
+                  <td class="note">スモーク(cキーのやつ)</td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">-</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h3 id="hit-burst">ヒットバースト</h3>
+            <p class="topic">ヒットサークルをタップしたときの表示｢ヒットバースト｣に関連する項目｡</p>
+            <table>
+              <thead>
+                <tr>
+                  <th class="file-name">ファイル名</th>
+                  <th class="note">解説</th>
+                  <th class="origin">原点</th>
+                  <th class="sd-size">サイズ</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="file-name">hit0(-n).png</td>
+                  <td class="note">タイミング判定0のときのヒットバースト画像</td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">-</td>
+                </tr>
+                <tr>
+                  <td class="file-name">hit50(-n).png</td>
+                  <td class="note">タイミング判定50のときのヒットバースト画像</td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">-</td>
+                </tr>
+                <tr>
+                  <td class="file-name">hit100(-n).png</td>
+                  <td class="note">タイミング判定100のときのヒットバースト画像</td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">-</td>
+                </tr>
+                <tr>
+                  <td class="file-name">hit100k(-n).png</td>
+                  <td class="note">カラーコンボ100喝のときのヒットバースト画像</td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">-</td>
+                </tr>
+                <tr>
+                  <td class="file-name">hit300(-n).png</td>
+                  <td class="note">タイミング判定300のときのヒットバースト画像</td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">-</td>
+                </tr>
+                <tr>
+                  <td class="file-name">hit300g(-n).png</td>
+                  <td class="note">カラーコンボ300激のときのヒットバースト画像</td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">-</td>
+                </tr>
+                <tr>
+                  <td class="file-name">hit300k(-n).png</td>
+                  <td class="note">カラーコンボ300喝のときのヒットバースト画像</td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">-</td>
+                </tr>
+                <tr>
+                  <td class="file-name">lighting.png</td>
+                  <td class="note">サークルをタップした後に残る画像｡設定から オフにすることが可能｡色はコンボカラーに依存
+                  </td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">100×100px</td>
+                </tr>
+                <tr>
+                  <td class="file-name">particle50.png</td>
+                  <td class="note">タイミング判定50のときに出る粒状の画像</td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">7×7px</td>
+                </tr>
+                <tr>
+                  <td class="file-name">particle100.ong</td>
+                  <td class="note">タイミング判定100のときに出る粒状の画像</td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">7×7px</td>
+                </tr>
+                <tr>
+                  <td class="file-name">particle300.ong</td>
+                  <td class="note">タイミング判定300のときに出る粒状の画像</td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">7×7px</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h3 id="combo-burst">コンボバースト</h3>
+            <p class="topic">一定のコンボ数をだすと発動する｢コンボバースト｣に関連する項目｡コンボバーストに関する詳しい設定は
+              <code>skin.ini</code>から行うことができる｡</p>
+            <table>
+              <thead>
+                <tr>
+                  <th class="file-name">ファイル名</th>
+                  <th class="note">解説</th>
+                  <th class="origin">原点</th>
+                  <th class="sd-size">サイズ</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="file-name">comboburst(-n).png</td>
+                  <td class="note">コンボバースト時に画面横から出てくる画像｡ 複数含めた場合nが小さい順番に表示される
+                  </td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">-</td>
+                </tr>
+                <tr>
+                  <td class="file-name">star2.png</td>
+                  <td class="note">
+                    <b>※1</b>コンボバースト時に画面下左右から吹き出る粒状の画像</td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">-</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h3 id="hit-circle">ヒットサークル</h3>
+            <p class="topic">スライダーも含んだすべてのタップする円｢ヒットサークル｣に関連する項目｡</p>
+            <table>
+              <thead>
+                <tr>
+                  <th class="file-name">ファイル名</th>
+                  <th class="note">解説</th>
+                  <th class="origin">原点</th>
+                  <th class="sd-size">サイズ</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="file-name">hitcircle.png</td>
+                  <td class="note">ヒットサークル画像｡スライダーサークルが含まれて 無い場合にスライダーサークルにも使用される
+                  </td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">118×118px</td>
+                </tr>
+                <tr>
+                  <td class="file-name">hitcircleoverlay(-n).png</td>
+                  <td class="note">
+                    <code>hitcircle.png</code>の上のレイヤー｡ スライダーサークルが含まれて無い場合に スライダーサークルにも使用される
+                  </td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">118×118px</td>
+                </tr>
+                <tr>
+                  <td class="file-name">approachcircle.png</td>
+                  <td class="note">ヒットサークルに向かって縮んでくる円</td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">126×126px</td>
+                </tr>
+                <tr>
+                  <td class="file-name">followpoint.png</td>
+                  <td class="note">ヒットサークル同士をつなぐ点や線</td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">-</td>
+                </tr>
+                <tr>
+                  <td class="file-name">sliderstartcircle.png</td>
+                  <td class="note">スライダーの始端</td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">118×118px</td>
+                </tr>
+                <tr>
+                  <td class="file-name">sliderstartcircleoverlay(-n).png</td>
+                  <td class="note">
+                    <code>sliderstartcircle.png</code>の上のレイヤー</td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">118×118px</td>
+                </tr>
+                <tr>
+                  <td class="file-name">sliderendcircle.png</td>
+                  <td class="note">スライダーの終端</td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">118×118px</td>
+                </tr>
+                <tr>
+                  <td class="file-name">sliderendcircleoverlay(-n).png</td>
+                  <td class="note">
+                    <code>sliderendcircle.png</code>の上のレイヤー</td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">118×118px</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h3 id="slider">スライダー</h3>
+            <p class="topic">スライダーに関連する項目｡</p>
+            <table>
+              <thead>
+                <tr>
+                  <th class="file-name">ファイル名</th>
+                  <th class="note">解説</th>
+                  <th class="origin">原点</th>
+                  <th class="sd-size">サイズ</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="file-name">sliderb(n).png</td>
+                  <td class="note">スライダーボールまたはスライダー スライド時に追従する画像
+                  </td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">118×118px</td>
+                </tr>
+                <tr>
+                  <td class="file-name">sliderb-nd.png</td>
+                  <td class="note">
+                    <code>sliderb(n).png</code>の最下層レイヤー｡
+
+                    <code>sliderb(n).png</code>がある場合は無視される</td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">118×118px</td>
+                </tr>
+                <tr>
+                  <td class="file-name">sliderb-spec.png</td>
+                  <td class="note">
+                    <code>sliderb(n).png</code>の最高層のレイヤー｡静的で反転や回転 はしない｡
+                    <code>sliderb(n).png</code>がある場合は無視される</td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">118×118px</td>
+                </tr>
+                <tr>
+                  <td class="file-name">sliderfollowcircle(-n).png</td>
+                  <td class="note">スライダースライド時に拡大されて追従する画像</td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">256×256px (最大: 308×308px)
+                  </td>
+                </tr>
+                <tr>
+                  <td class="file-name">sliderscorepoint.png</td>
+                  <td class="note">スライダーのスコアポイント｡ スライダーに時々ある小さな印
+                  </td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">-</td>
+                </tr>
+                <tr>
+                  <td class="file-name">reversearrow.png</td>
+                  <td class="note">スライダーの折返し矢印｡右向き(→)で用意する</td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">-</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h3 id="hit-circle-number">ヒットサークルナンバー</h3>
+            <p class="topic">ヒットサークルの中に表示される｢ヒットサークルナンバー｣に関連する項目｡0.8×されて表示される｡数字と数字の間隔は
+              <code>skin.ini</code>から設定が可能｡</p>
+            <table>
+              <thead>
+                <tr>
+                  <th class="file-name">ファイル名</th>
+                  <th class="note">解説</th>
+                  <th class="origin">原点</th>
+                  <th class="sd-size">サイズ</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="file-name">default-0.png</td>
+                  <td class="note">ヒットサークルの中に表示される数字の画像(0)</td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">-</td>
+                </tr>
+                <tr>
+                  <td class="file-name">default-1.png</td>
+                  <td class="note">同上(1)</td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">-</td>
+                </tr>
+                <tr>
+                  <td class="file-name">default-2.png</td>
+                  <td class="note">同上(2)</td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">-</td>
+                </tr>
+                <tr>
+                  <td class="file-name">default-3.png</td>
+                  <td class="note">同上(3)</td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">-</td>
+                </tr>
+                <tr>
+                  <td class="file-name">default-4.png</td>
+                  <td class="note">同上(4)</td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">-</td>
+                </tr>
+                <tr>
+                  <td class="file-name">default-5.png</td>
+                  <td class="note">同上(5)</td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">-</td>
+                </tr>
+                <tr>
+                  <td class="file-name">default-6.png</td>
+                  <td class="note">同上(6)</td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">-</td>
+                </tr>
+                <tr>
+                  <td class="file-name">default-7.png</td>
+                  <td class="note">同上(7)</td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">-</td>
+                </tr>
+                <tr>
+                  <td class="file-name">default-8.png</td>
+                  <td class="note">同上(8)</td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">-</td>
+                </tr>
+                <tr>
+                  <td class="file-name">default-9.png</td>
+                  <td class="note">同上(9)</td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">-</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h3 id="spinner">スピナー</h3>
+            <p class="topic">BASIC要素とNEW要素の両方が存在する場合BASIC要素が優先され,NEWラベルの要素はすべて無視されます｡NEW要素を利用したい場合はBASIC要素を含めないで下さい｡</p>
+            <h4>両方で使用可</h4>
+            <table>
+              <thead>
+                <tr>
+                  <th class="file-name">ファイル名</th>
+                  <th class="note">解説</th>
+                  <th class="origin">原点</th>
+                  <th class="sd-size">サイズ</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="file-name">spinner-approachcircle.png</td>
+                  <td class="note">時間経過とともに収縮する画像｡
+
+                    <code>spinner-circle.png</code>か
+                    <code>spinner-top.png</code>が使用されている場合,強制的に使用する</td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">384x384px</td>
+                </tr>
+                <tr>
+                  <td class="file-name">spinner-clear.png</td>
+                  <td class="note">スピナークリア時に表示する画像</td>
+                  <td class="origin">中央(center,230)</td>
+                  <td class="sd-size">-</td>
+                </tr>
+                <tr>
+                  <td class="file-name">spinner-spin.png</td>
+                  <td class="note">スピナー開始時に表示する画像</td>
+                  <td class="origin">中央(center,582)</td>
+                  <td class="sd-size">-</td>
+                </tr>
+                <tr>
+                  <td class="file-name">spinner-rpm.png</td>
+                  <td class="note">分間回転数表示の背景</td>
+                  <td class="origin">左上(821,1024)</td>
+                  <td class="sd-size">280x56px</td>
+                </tr>
+              </tbody>
+            </table>
+            <h4>NEW</h4>
+            <table>
+              <thead>
+                <tr>
+                  <th class="file-name">ファイル名</th>
+                  <th class="note">解説</th>
+                  <th class="origin">原点</th>
+                  <th class="sd-size">サイズ</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="file-name">spinner-middle.png</td>
+                  <td class="note">最高層のレイヤー｡時間経過とともに赤色に着色される</td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">689x689px</td>
+                </tr>
+                <tr>
+                  <td class="file-name">spinner-middle2.png</td>
+                  <td class="note">2番目に高いレイヤー｡最も早く回転する</td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">17x17px</td>
+                </tr>
+                <tr>
+                  <td class="file-name">spinner-top.png</td>
+                  <td class="note">中間のレイヤー｡2番目に早く回転する</td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">667x667px</td>
+                </tr>
+                <tr>
+                  <td class="file-name">spinner-bottom.png</td>
+                  <td class="note">番目に低いレイヤー</td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">667x667px</td>
+                </tr>
+                <tr>
+                  <td class="file-name">spinner-glow.png</td>
+                  <td class="note">最下層レイヤー｡スピンボーナス獲得時に白く点滅</td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">852x852px</td>
+                </tr>
+              </tbody>
+            </table>
+            <h4>BASIC</h4>
+            <table>
+              <thead>
+                <tr>
+                  <th class="file-name">ファイル名</th>
+                  <th class="note">解説</th>
+                  <th class="origin">原点</th>
+                  <th class="sd-size">サイズ</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="file-name">spinner-background.png</td>
+                  <td class="note">スピナーの背景画像｡
+                    <code>skin.ini</code>の
+                    <code>SpinnerBackground</code>で色の変更可(デフォルトではグレー)</td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">1024x702px</td>
+                </tr>
+                <tr>
+                  <td class="file-name">spinner-circle.png</td>
+                  <td class="note">スピナーの回転部分</td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">666x666px</td>
+                </tr>
+                <tr>
+                  <td class="file-name">spinner-metre.png</td>
+                  <td class="note">スピン進行度ゲージ｡最高時に最上部が点滅(
+                    <code>skin.ini</code>の
+                    <code>SpinnerNoBlink</code>を1に設定することで無効化可)</td>
+                  <td class="origin">左上</td>
+                  <td class="sd-size">1024x692px</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h3 id="scorebar">スコアバー(HPバー)</h3>
+            <p class="topic">プレイフィールドの左上にあるHPを表す｢スコアバー｣に関連する項目｡サイズ制限が無いのでプレイフィールドの枠なんかは
+              <code>scorebar-bg.png</code>を使って作ります｡</p>
+            <table>
+              <thead>
+                <tr>
+                  <th class="file-name">ファイル名</th>
+                  <th class="note">解説</th>
+                  <th class="origin">原点</th>
+                  <th class="sd-size">サイズ</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="file-name">scorebar-bg.png</td>
+                  <td class="note">スコアバーの背景画像</td>
+                  <td class="origin">左上(0,0)</td>
+                  <td class="sd-size">-</td>
+                </tr>
+                <tr>
+                  <td class="file-name">scorebar-colour(-n).png</td>
+                  <td class="note">増減するスコアバー</td>
+                  <td class="origin">左上(0,24)</td>
+                  <td class="sd-size">-</td>
+                </tr>
+                <tr>
+                  <td class="file-name">scorebar-ki.png</td>
+                  <td class="note">HPが50~100%のときに表示</td>
+                  <td class="origin">左上(HP,0)</td>
+                  <td class="sd-size">-</td>
+                </tr>
+                <tr>
+                  <td class="file-name">scorebar-kidanger.png</td>
+                  <td class="note">HPが25~50%のときに表示</td>
+                  <td class="origin">左上(HP,0)</td>
+                  <td class="sd-size">-</td>
+                </tr>
+                <tr>
+                  <td class="file-name">scorebar-kidanger2.png</td>
+                  <td class="note">HPが25%未満のときに表示</td>
+                  <td class="origin">左上(HP,0)</td>
+                  <td class="sd-size">-</td>
+                </tr>
+                <tr>
+                  <td class="file-name">scorebar-marker.png</td>
+                  <td class="note">多分kiと同じ｡色が着くっぽい｡使えないかも｡よく分からん</td>
+                  <td class="origin">不明</td>
+                  <td class="sd-size">-</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h3 id="score-numbar">スコアナンバー</h3>
+            <p class="topic">スコアを表示する為に使用される｢スコアナンバー｣に関連する項目｡
+              <code>skin.ini</code>の
+              <code>ScorePrefix</code>コマンドでファイルの接頭辞を指定する必要があります｡例えば
+              <code>ScorePrefix: score</code>のようにすると
+              <code>score-0.png</code>のようなscoreではじまるファイルが指定できます｡
+              <code>ScorePrefix: fonts/score</code>のようにフォルダのパスを指定することも可能です｡</p>
+            <table>
+              <thead>
+                <tr>
+                  <th class="file-name">ファイル名</th>
+                  <th class="note">解説</th>
+                  <th class="origin">原点</th>
+                  <th class="sd-size">サイズ</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="file-name">score-0.png</td>
+                  <td class="note">スコア表示用の文字(0)</td>
+                  <td class="origin">不明</td>
+                  <td class="sd-size">-</td>
+                </tr>
+                <tr>
+                  <td class="file-name">score-1.png</td>
+                  <td class="note">同上(1)</td>
+                  <td class="origin">不明</td>
+                  <td class="sd-size">-</td>
+                </tr>
+                <tr>
+                  <td class="file-name">score-2.png</td>
+                  <td class="note">同上(2)</td>
+                  <td class="origin">不明</td>
+                  <td class="sd-size">-</td>
+                </tr>
+                <tr>
+                  <td class="file-name">score-3.png</td>
+                  <td class="note">同上(3)</td>
+                  <td class="origin">不明</td>
+                  <td class="sd-size">-</td>
+                </tr>
+                <tr>
+                  <td class="file-name">score-4.png</td>
+                  <td class="note">同上(4)</td>
+                  <td class="origin">不明</td>
+                  <td class="sd-size">-</td>
+                </tr>
+                <tr>
+                  <td class="file-name">score-5.png</td>
+                  <td class="note">同上(5)</td>
+                  <td class="origin">不明</td>
+                  <td class="sd-size">-</td>
+                </tr>
+                <tr>
+                  <td class="file-name">score-6.png</td>
+                  <td class="note">同上(6)</td>
+                  <td class="origin">不明</td>
+                  <td class="sd-size">-</td>
+                </tr>
+                <tr>
+                  <td class="file-name">score-7.png</td>
+                  <td class="note">同上(7)</td>
+                  <td class="origin">不明</td>
+                  <td class="sd-size">-</td>
+                </tr>
+                <tr>
+                  <td class="file-name">score-8.png</td>
+                  <td class="note">同上(8)</td>
+                  <td class="origin">不明</td>
+                  <td class="sd-size">-</td>
+                </tr>
+                <tr>
+                  <td class="file-name">score-9.png</td>
+                  <td class="note">同上(9)</td>
+                  <td class="origin">不明</td>
+                  <td class="sd-size">-</td>
+                </tr>
+                <tr>
+                  <td class="file-name">score-comma.png</td>
+                  <td class="note">同上(,)</td>
+                  <td class="origin">不明</td>
+                  <td class="sd-size">-</td>
+                </tr>
+                <tr>
+                  <td class="file-name">score-dot.png</td>
+                  <td class="note">同上(.)</td>
+                  <td class="origin">不明</td>
+                  <td class="sd-size">-</td>
+                </tr>
+                <tr>
+                  <td class="file-name">score-percent.png</td>
+                  <td class="note">同上(%)</td>
+                  <td class="origin">不明</td>
+                  <td class="sd-size">-</td>
+                </tr>
+                <tr>
+                  <td class="file-name">score-x.png</td>
+                  <td class="note">同上(×)</td>
+                  <td class="origin">不明</td>
+                  <td class="sd-size">-</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h3 id="mod-icon">MODアイコン</h3>
+            <p class="topic">各種MODの表示画像｢MODアイコン｣に関連する項目｡90x65pxまでなら選択して拡大されても隣同士重なりません｡(参考SDサイズ:64×64px~100×100px)MODについて詳しく知りたいときは更新が滞った
+              <a href="https://wikiwiki.jp/osu/Mod" class="web-link" target="_blank">こちら</a>のWikiを確認して下さい｡</p>
+            <table>
+              <thead>
+                <tr>
+                  <th class="file-name">ファイル名</th>
+                  <th class="note">解説</th>
+                  <th class="origin">原点</th>
+                  <th class="sd-size">サイズ</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="file-name">selection-mod-autoplay.png</td>
+                  <td class="note">autoplay</td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">-</td>
+                </tr>
+                <tr>
+                  <td class="file-name">selection-mod-doubletime.png</td>
+                  <td class="note">doubletime</td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">-</td>
+                </tr>
+                <tr>
+                  <td class="file-name">selection-mod-easy.png</td>
+                  <td class="note">easy</td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">-</td>
+                </tr>
+                <tr>
+                  <td class="file-name">selection-mod-fadein.png</td>
+                  <td class="note">fadein</td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">-</td>
+                </tr>
+                <tr>
+                  <td class="file-name">selection-mod-flashlight.png</td>
+                  <td class="note">flashlight</td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">-</td>
+                </tr>
+                <tr>
+                  <td class="file-name">selection-mod-halftime.png</td>
+                  <td class="note">halftime</td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">-</td>
+                </tr>
+                <tr>
+                  <td class="file-name">selection-mod-hardrock.png</td>
+                  <td class="note">hardrock</td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">-</td>
+                </tr>
+                <tr>
+                  <td class="file-name">selection-mod-hidden.png</td>
+                  <td class="note">hidden</td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">-</td>
+                </tr>
+                <tr>
+                  <td class="file-name">selection-mod-nightcore.png</td>
+                  <td class="note">nightcore</td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">-</td>
+                </tr>
+                <tr>
+                  <td class="file-name">selection-mod-nofail.png</td>
+                  <td class="note">nofail</td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">-</td>
+                </tr>
+                <tr>
+                  <td class="file-name">selection-mod-perfect.png</td>
+                  <td class="note">perfect</td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">-</td>
+                </tr>
+                <tr>
+                  <td class="file-name">selection-mod-relax.png</td>
+                  <td class="note">relax</td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">-</td>
+                </tr>
+                <tr>
+                  <td class="file-name">selection-mod-relax2.png</td>
+                  <td class="note">relax2</td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">-</td>
+                </tr>
+                <tr>
+                  <td class="file-name">selection-mod-scorev2.png</td>
+                  <td class="note">scorev2</td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">-</td>
+                </tr>
+                <tr>
+                  <td class="file-name">selection-mod-spunout.png</td>
+                  <td class="note">spunout</td>
+                  <td class="origin">中央</td>
+                  <td class="origin">-</td>
+                </tr>
+                <tr>
+                  <td class="file-name">selection-mod-suddendeath.png</td>
+                  <td class="note">suddendeath</td>
+                  <td class="sd-size">中央</td>
+                  <td class="sd-size">-</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h3 id="play-field">プレイフィールド</h3>
+            <p class="topic"></p>
+            <table>
+              <thead>
+                <tr>
+                  <th class="file-name">ファイル名</th>
+                  <th class="note">解説</th>
+                  <th class="origin">原点</th>
+                  <th class="sd-size">サイズ</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="file-name">comboburst(-n).png</td>
+                  <td class="note">コンボバースト時に横から出てくる画像｡右向きで用意する</td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">(最高高さ:768px)</td>
+                </tr>
+                <tr>
+                  <td class="file-name">multi-skipped.png</td>
+                  <td class="note">マルチプレイ時にスキップリクエストしたプレイヤーの横に出るマーク</td>
+                  <td class="origin">不明</td>
+                  <td class="sd-size">-</td>
+                </tr>
+                <tr>
+                  <td class="file-name">play-skip(-n).png</td>
+                  <td class="note">前奏･後奏スキップボタンの画像</td>
+                  <td class="origin">不明</td>
+                  <td class="sd-size">-</td>
+                </tr>
+                <tr>
+                  <td class="file-name">play-unranked.png</td>
+                  <td class="note">アンランクでプレイするとき上の方に出る画像</td>
+                  <td class="origin">不明</td>
+                  <td class="sd-size">-</td>
+                </tr>
+                <tr>
+                  <td class="file-name">star2.png</td>
+                  <td class="note">
+                    <b>※1</b>譜面選択,カーソル,コンボブーストで出る粒状の画像</td>
+                  <td class="sd-size">中央</td>
+                  <td class="origin">-</td>
+                </tr>
+                <tr>
+                  <td class="file-name">play-warningarrow.png</td>
+                  <td class="note">ポーズ時と休憩終了警告に四隅に表示される矢印｡右向き(→)で用意する</td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">-</td>
+                </tr>
+                <tr>
+                  <td class="file-name">arrow-pause.png</td>
+                  <td class="note">ポーズ時とfail時に四隅に表示される矢印｡右向き(→)で用意する｡
+                    <code>play-warningarrow</code>より優先される</td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">-</td>
+                </tr>
+                <tr>
+                  <td class="file-name">arrow-warning.png</td>
+                  <td class="note">休憩終了警告に表示される矢印｡右向き(→)で用意する｡
+                    <code>play-warningarrow</code>より優先される</td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">-</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h3 id="input-overlay">インプットオーバーレイ</h3>
+            <p class="topic">プレイフィールド右側にキーカウンターを表示する｢インプットオーバーレイ｣に関連する項目｡文字色などの設定は
+              <code>skin.ini</code>から行えます｡</p>
+            <table>
+              <thead>
+                <tr>
+                  <th class="file-name">ファイル名</th>
+                  <th class="note">解説</th>
+                  <th class="origin">原点</th>
+                  <th class="sd-size">サイズ</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="file-name">inputoverlay-background.png</td>
+                  <td class="note">時計回りに90度回転し,1.05×されて表示される</td>
+                  <td class="origin">左上(回転したときの右上)</td>
+                  <td class="sd-size">193x55px</td>
+                </tr>
+                <tr>
+                  <td class="file-name">inputoverlay-key.png</td>
+                  <td class="note">各キーカウンター(4個)の画像</td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">(最大:46x46px)</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h3 id="entry-numbar">エントリーナンバー</h3>
+            <p class="topic">選曲画面やプレイフィールドの左側に表示されるリーダーボードのスコア･コンボ数やプレイフィールド右側のキーカウンターに使用される｢エントリーナンバー｣に関連する項目｡
+              <a href="#score-numbar" class="web-link">スコアナンバー</a>との違いは小さい文字に使うという認識で大丈夫です｡原点は用途によって変わるので表には記載していません｡(スコア:左上,コンボ:右上,ランク:右上,キーカウンター:上中央)キーカウンターに使用時の色は
+              <code>skin.ini</code>の
+              <code>InputOverlayText</code>コマンドで変更することが可能です｡それ以外の使用時の色は固定です｡(スコア:白,コンボ:シアン)</p>
+            <table>
+              <thead>
+                <tr>
+                  <th class="file-name">ファイル名</th>
+                  <th class="note">解説</th>
+                  <th class="origin">原点</th>
+                  <th class="sd-size">サイズ</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="file-name">scoreentry-0.png</td>
+                  <td class="note">リーダーボードとキーカウンターに使用する文字(0)</td>
+                  <td class="origin">-</td>
+                  <td class="sd-size">11x14px</td>
+                </tr>
+                <tr>
+                  <td class="file-name">scoreentry-1.png</td>
+                  <td class="note">同上(1)</td>
+                  <td class="origin">-</td>
+                  <td class="sd-size">11x14px</td>
+                </tr>
+                <tr>
+                  <td class="file-name">scoreentry-2.png</td>
+                  <td class="note">同上(2)</td>
+                  <td class="origin">-</td>
+                  <td class="sd-size">11x14px</td>
+                </tr>
+                <tr>
+                  <td class="file-name">scoreentry-3.png</td>
+                  <td class="note">同上(3)</td>
+                  <td class="origin">-</td>
+                  <td class="sd-size">11x14px</td>
+                </tr>
+                <tr>
+                  <td class="file-name">scoreentry-4.png</td>
+                  <td class="note">同上(4)</td>
+                  <td class="origin">-</td>
+                  <td class="sd-size">11x14px</td>
+                </tr>
+                <tr>
+                  <td class="file-name">scoreentry-5.png</td>
+                  <td class="note">同上(5)</td>
+                  <td class="origin">-</td>
+                  <td class="sd-size">11x14px</td>
+                </tr>
+                <tr>
+                  <td class="file-name">scoreentry-6.png</td>
+                  <td class="note">同上(6)</td>
+                  <td class="origin">-</td>
+                  <td class="sd-size">11x14px</td>
+                </tr>
+                <tr>
+                  <td class="file-name">scoreentry-7.png</td>
+                  <td class="note">同上(7)</td>
+                  <td class="origin">-</td>
+                  <td class="sd-size">11x14px</td>
+                </tr>
+                <tr>
+                  <td class="file-name">scoreentry-8.png</td>
+                  <td class="note">同上(8)</td>
+                  <td class="origin">-</td>
+                  <td class="sd-size">11x14px</td>
+                </tr>
+                <tr>
+                  <td class="file-name">scoreentry-9.png</td>
+                  <td class="note">同上(9)</td>
+                  <td class="origin">-</td>
+                  <td class="sd-size">11x14px</td>
+                </tr>
+                <tr>
+                  <td class="file-name">scoreentry-comma.png</td>
+                  <td class="note">同上(,)</td>
+                  <td class="origin">-</td>
+                  <td class="sd-size">5x14px</td>
+                </tr>
+                <tr>
+                  <td class="file-name">scoreentry-dot.png</td>
+                  <td class="note">同上(.)</td>
+                  <td class="origin">-</td>
+                  <td class="sd-size">5x14px</td>
+                </tr>
+                <tr>
+                  <td class="file-name">scoreentry-percent.png</td>
+                  <td class="note">同上(%)</td>
+                  <td class="origin">-</td>
+                  <td class="sd-size">12x14px</td>
+                </tr>
+                <tr>
+                  <td class="file-name">scoreentry-x.png</td>
+                  <td class="note">同上(×)</td>
+                  <td class="origin">-</td>
+                  <td class="sd-size">10x14px</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h3 id="count">カウントダウン</h3>
+            <p class="topic">最近はカウントダウンする譜面が減っていますが｢カウントダウン｣に関連する項目｡</p>
+            <table>
+              <thead>
+                <tr>
+                  <th class="file-name">ファイル名</th>
+                  <th class="note">解説</th>
+                  <th class="origin">原点</th>
+                  <th class="sd-size">推奨SDサイズ</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="file-name">ready.png</td>
+                  <td class="note">ready</td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">(最大:1366x768px)</td>
+                </tr>
+                <tr>
+                  <td class="file-name">count1.png</td>
+                  <td class="note">1</td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">(最大:1366x768px)</td>
+                </tr>
+                <tr>
+                  <td class="file-name">count2.png</td>
+                  <td class="note">2</td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">(最大:1366x768px)</td>
+                </tr>
+                <tr>
+                  <td class="file-name">count3.png</td>
+                  <td class="note">3</td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">(最大:1366x768px)</td>
+                </tr>
+                <tr>
+                  <td class="file-name">go.png</td>
+                  <td class="note">go</td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">(最大:1366x768px)</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h3 id="section">セクションインジケーター</h3>
+            <p class="topic">譜面の休憩中に表示される｢セクションインジケーター｣に関連する小目｡passとかfailって出るやつです｡</p>
+            <table>
+              <thead>
+                <tr>
+                  <th class="file-name">ファイル名</th>
+                  <th class="note">解説</th>
+                  <th class="origin">原点</th>
+                  <th class="sd-size">推奨SDサイズ</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="file-name">section-fail.png</td>
+                  <td class="note">HPが約50%未満の場合のfail表示</td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">(最大:768px)</td>
+                </tr>
+                <tr>
+                  <td class="file-name">section-pass.png</td>
+                  <td class="note">HPが約50%以上の場合のpass表示</td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">(最大:768px)</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h3 id="ranking">ランキンググレード</h3>
+            <p class="topic">プレイ譜面の評価｢ランキンググレード｣に関連する項目｡リザルトやリーダーボードに表示されるABCDなどの評価｡ランキンググレードのうち,小さい方の画像の原点は使用場面によって異なります｡(休憩:中央,選曲パネル:左中央,ユーザースコア:中央)</p>
+            <table>
+              <thead>
+                <tr>
+                  <th class="file-name">ファイル名</th>
+                  <th class="note">解説</th>
+                  <th class="origin">原点</th>
+                  <th class="sd-size">推奨SDサイズ</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="file-name">ranking-a.png</td>
+                  <td class="note">A</td>
+                  <td class="origin">中央(1728,760)</td>
+                  <td class="sd-size">-</td>
+                </tr>
+                <tr>
+                  <td class="file-name">ranking-a-small.png</td>
+                  <td class="note">小さいA</td>
+                  <td class="origin">-</td>
+                  <td class="sd-size">34x40px</td>
+                </tr>
+                <tr>
+                  <td class="file-name">ranking-b.png</td>
+                  <td class="note">B</td>
+                  <td class="origin">中央(1728,760)</td>
+                  <td class="sd-size">-</td>
+                </tr>
+                <tr>
+                  <td class="file-name">ranking-b-small.png</td>
+                  <td class="note">小さいB</td>
+                  <td class="origin">-</td>
+                  <td class="sd-size">34x40px</td>
+                </tr>
+                <tr>
+                  <td class="file-name">ranking-c.png</td>
+                  <td class="note">C</td>
+                  <td class="origin">中央(1728,760)</td>
+                  <td class="sd-size">-</td>
+                </tr>
+                <tr>
+                  <td class="file-name">ranking-c-small.png</td>
+                  <td class="note">小さいC</td>
+                  <td class="origin">-</td>
+                  <td class="sd-size">34x40px</td>
+                </tr>
+                <tr>
+                  <td class="file-name">ranking-d.png</td>
+                  <td class="note">D</td>
+                  <td class="origin">中央(1728,760)</td>
+                  <td class="sd-size">-</td>
+                </tr>
+                <tr>
+                  <td class="file-name">ranking-d-small.png</td>
+                  <td class="note">小さいD</td>
+                  <td class="origin">-</td>
+                  <td class="sd-size">34x40px</td>
+                </tr>
+                <tr>
+                  <td class="file-name">ranking-s.png</td>
+                  <td class="note">S</td>
+                  <td class="origin">中央(1728,760)</td>
+                  <td class="sd-size">-</td>
+                </tr>
+                <tr>
+                  <td class="file-name">ranking-s-small.png</td>
+                  <td class="note">小さいS</td>
+                  <td class="origin">-</td>
+                  <td class="sd-size">34x40px</td>
+                </tr>
+                <tr>
+                  <td class="file-name">ranking-sh.png</td>
+                  <td class="note">シルバーのS</td>
+                  <td class="origin">中央(1728,760)</td>
+                  <td class="sd-size">-</td>
+                </tr>
+                <tr>
+                  <td class="file-name">ranking-sh-small.png/</td>
+                  <td class="note">小さいシルバーのS</td>
+                  <td class="origin">-</td>
+                  <td class="sd-size">34x40px</td>
+                </tr>
+                <tr>
+                  <td class="file-name">ranking-x.png</td>
+                  <td class="note">SS</td>
+                  <td class="origin">中央(1728,760)</td>
+                  <td class="sd-size">-</td>
+                </tr>
+                <tr>
+                  <td class="file-name">ranking-x-small.png</td>
+                  <td class="note">小さいSS</td>
+                  <td class="origin">-</td>
+                  <td class="sd-size">34x40px</td>
+                </tr>
+                <tr>
+                  <td class="file-name">ranking-xh.png</td>
+                  <td class="note">シルバーのSS</td>
+                  <td class="origin">中央(1728,760)</td>
+                  <td class="sd-size">-</td>
+                </tr>
+                <tr>
+                  <td class="file-name">ranking-xh-small.png</td>
+                  <td class="note">小さいシルバーのSS</td>
+                  <td class="origin">-</td>
+                  <td class="sd-size">34x40px</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h3 id="result">リザルト画面</h3>
+            <p class="topic">譜面クリア後に表示される画面｢リザルト画面｣に関する画像｡各種文字の画像を透明にして,代わりに
+              <code>ranking-panel.png</code>に書くとう方法もります｡</p>
+            <table>
+              <thead>
+                <tr>
+                  <th class="file-name">ファイル名</th>
+                  <th class="note">解説</th>
+                  <th class="origin">原点</th>
+                  <th class="sd-size">推奨SDサイズ</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="file-name">ranking-accuracy.png</td>
+                  <td class="note">Accuracyの文字の画像</td>
+                  <td class="origin">左上(291,480)</td>
+                  <td class="sd-size">-</td>
+                </tr>
+                <tr>
+                  <td class="file-name">ranking-graph.png</td>
+                  <td class="note">グラフの背景画像｡上端と左端から7pxは透明にする</td>
+                  <td class="origin">左上(256,608)</td>
+                  <td class="sd-size">(最小:308x148px)</td>
+                </tr>
+                <tr>
+                  <td class="file-name">ranking-maxcombo.png</td>
+                  <td class="note">マックスコンボの文字の画像</td>
+                  <td class="origin">左上(8,480)</td>
+                  <td class="sd-size">-</td>
+                </tr>
+                <tr>
+                  <td class="file-name">ranking-panel.png</td>
+                  <td class="note">リザルトの背景画像</td>
+                  <td class="origin">左上(0,102)</td>
+                  <td class="sd-size">(最高高さ:666px)</td>
+                </tr>
+                <tr>
+                  <td class="file-name">ranking-perfect.png</td>
+                  <td class="note">パーフェクトの文字の画像</td>
+                  <td class="origin">中央(416,688)</td>
+                  <td class="sd-size">-</td>
+                </tr>
+                <tr>
+                  <td class="file-name">ranking-title.png</td>
+                  <td class="note">ランキンググレードの上に表示されるランキングの文字の画像</td>
+                  <td class="origin">右上(1888,?)</td>
+                  <td class="sd-size">-</td>
+                </tr>
+                <tr>
+                  <td class="file-name">ranking-winner.png</td>
+                  <td class="note">1位のプレイヤーを表示する枠｡マルチプレイ専用</td>
+                  <td class="origin">左上</td>
+                  <td class="sd-size">200×214px</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h3 id="pause">ポーズ画面</h3>
+            <p class="topic">譜面プレイ中にEscキーを押して表示される｢ポーズ画面｣に関連する項目｡</p>
+            <table>
+              <thead>
+                <tr>
+                  <th class="file-name">ファイル名</th>
+                  <th class="note">解説</th>
+                  <th class="origin">原点</th>
+                  <th class="sd-size">推奨SDサイズ</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="file-name">pause-back.png</td>
+                  <td class="note">バックボタン｡fail画面とポーズ画面に表示される</td>
+                  <td class="origin">中央(960,576)</td>
+                  <td class="sd-size">-</td>
+                </tr>
+                <tr>
+                  <td class="file-name">pause-continue.png</td>
+                  <td class="note">コンテニューボタン｡ポーズ画面に表示される</td>
+                  <td class="origin">中央(960,224)</td>
+                  <td class="sd-size">-</td>
+                </tr>
+                <tr>
+                  <td class="file-name">pause-retry.png</td>
+                  <td class="note">リトライボタン｡リザルト画面とポーズ画面,fail画面に表示される</td>
+                  <td class="origin">中央(960,400)ただしリザルト画面では右中央(1920,576)</td>
+                  <td class="sd-size">-</td>
+                </tr>
+                <tr>
+                  <td class="file-name">pause-replay.png</td>
+                  <td class="note">リプレイボタン｡リザルト画面(ランクインプレイヤーのリザルトを含む)に表示される</td>
+                  <td class="origin">右中央(1920,672)ただし
+                    <code>pause-retry.png</code>が不要の場合は右中央(1920,576)</td>
+                  <td class="sd-size">-</td>
+                </tr>
+                <tr>
+                  <td class="file-name">pause-overlay.png</td>
+                  <td class="note">ポーズしたときに表示される背景画像｡調整されずに素の解像度で表示される</td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">(最大:1366x768px)</td>
+                </tr>
+                <tr>
+                  <td class="file-name">fail-background.png</td>
+                  <td class="note">failしたときに表示される背景画像｡1920x1200pxにサイズ調整されて表示される</td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">(最大:1920x1200px)</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h2 id="interface">インターフェース</h2>
+            <h3 id="main-menu">メインメニュー</h3>
+            <p class="topic">ゲーム起動時最初に表示される画面｢メインメニュー｣に関連する項目｡</p>
+            <table>
+              <thead>
+                <tr>
+                  <th class="file-name">ファイル名</th>
+                  <th class="note">解説</th>
+                  <th class="origin">原点</th>
+                  <th class="sd-size">推奨SDサイズ</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="file-name">menu-background.jpg</td>
+                  <td class="note">メニュー画面の背景
+                    <b>※3</b>
+                  </td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">1366x768px</td>
+                </tr>
+                <tr>
+                  <td class="file-name">welcome_text.png</td>
+                  <td class="note">ゲーム起動時のwelcomeの画像
+                    <b>※3</b>
+                  </td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">-</td>
+                </tr>
+                <tr>
+                  <td class="file-name">menu-snow.png</td>
+                  <td class="note">メニュー画面で降ってくる画像｡ゲームオプションからオフにできる</td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">32x32px</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h3 id="button">ボタン</h3>
+            <p class="topic">｢ボタン｣に関連する項目｡すべて同じ高さで用意しなければなりません｡色は各ボタンによって乗算ブレンドで変更されます｡</p>
+            <table>
+              <thead>
+                <tr>
+                  <th class="file-name">ファイル名</th>
+                  <th class="note">解説</th>
+                  <th class="origin">原点</th>
+                  <th class="sd-size">推奨SDサイズ</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="file-name">button-left.png</td>
+                  <td class="note">ボタンの背景画像の左端</td>
+                  <td class="origin">右上</td>
+                  <td class="sd-size">-</td>
+                </tr>
+                <tr>
+                  <td class="file-name">button-middle.png</td>
+                  <td class="note">ボタンの背景画像の中央｡ボタンサイズに合わせて調整される</td>
+                  <td class="origin">上中央</td>
+                  <td class="sd-size">-</td>
+                </tr>
+                <tr>
+                  <td class="file-name">button-right.png</td>
+                  <td class="note">ボタンの背景画像の右端</td>
+                  <td class="origin">左上</td>
+                  <td class="sd-size">-</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h3 id="offset">オフセットウィザード</h3>
+            <p class="topic">ゲームオプションの全体オフセット設定画面｢オフセットウィザード｣に関連する項目｡</p>
+            <table>
+              <thead>
+                <tr>
+                  <th class="file-name">ファイル名</th>
+                  <th class="note">解説</th>
+                  <th class="origin">原点</th>
+                  <th class="sd-size">推奨SDサイズ</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="file-name">options-offset-tick.png</td>
+                  <td class="note">全体オフセット設定画面で一定リズムで流れてくるノーツ</td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">-</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h3 id="selection">ソングセレクション</h3>
+            <p class="topic"></p>
+            <table>
+              <thead>
+                <tr>
+                  <th class="file-name">ファイル名</th>
+                  <th class="note">解説</th>
+                  <th class="origin">原点</th>
+                  <th class="sd-size">推奨SDサイズ</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="file-name">menu-back(-n).png</td>
+                  <td class="note">戻るボタン</td>
+                  <td class="origin">左下(0,1080)</td>
+                  <td class="sd-size">200x214px</td>
+                </tr>
+                <tr>
+                  <td class="file-name">menu-button-background.png</td>
+                  <td class="note">譜面選択パネルの背景｡スコアボードの背景｡譜面グループのフォルダ</td>
+                  <td class="origin">左下(0,1080)</td>
+                  <td class="sd-size">(最小:690x85px)</td>
+                </tr>
+                <tr>
+                  <td class="file-name">selection-mode.png</td>
+                  <td class="note">モード切り替えボタン</td>
+                  <td class="origin">左下</td>
+                  <td class="sd-size">92x90px</td>
+                </tr>
+                <tr>
+                  <td class="file-name">selection-mode-over.png</td>
+                  <td class="note">モード切り替えボタンにカーソルを合わせたときの表示</td>
+                  <td class="origin">左下</td>
+                  <td class="sd-size">92x90px</td>
+                </tr>
+                <tr>
+                  <td class="file-name">selection-mods.png</td>
+                  <td class="note">Mod選択ボタン</td>
+                  <td class="origin">左下</td>
+                  <td class="sd-size">77x90px</td>
+                </tr>
+                <tr>
+                  <td class="file-name">selection-mods-over.png</td>
+                  <td class="note">Mod選択ボタンにカーソルを合わせたときの表示</td>
+                  <td class="origin">左下</td>
+                  <td class="sd-size">77x90px</td>
+                </tr>
+                <tr>
+                  <td class="file-name">selection-random.png</td>
+                  <td class="note">ランダムボタン</td>
+                  <td class="origin">左下</td>
+                  <td class="sd-size">77x90px</td>
+                </tr>
+                <tr>
+                  <td class="file-name">selection-random-over.png</td>
+                  <td class="note">ランダム選択ボタンにカーソルを合わせたときの表示</td>
+                  <td class="origin">左下</td>
+                  <td class="sd-size">77x90px</td>
+                </tr>
+                <tr>
+                  <td class="file-name">selection-options.png</td>
+                  <td class="note">譜面設定ボタン</td>
+                  <td class="origin">左下</td>
+                  <td class="sd-size">77x90px</td>
+                </tr>
+                <tr>
+                  <td class="file-name">selection-options-over.png</td>
+                  <td class="note">譜面設定ボタンにカーソルを合わせたときの表示</td>
+                  <td class="origin">左下</td>
+                  <td class="sd-size">77x90px</td>
+                </tr>
+                <tr>
+                  <td class="file-name">selection-tab.png</td>
+                  <td class="note">画面右上にある5個のタブ画像の1個分</td>
+                  <td class="origin">左上</td>
+                  <td class="sd-size">142x24px</td>
+                </tr>
+                <tr>
+                  <td class="file-name">star.png</td>
+                  <td class="note">難易度の星｡最後の星は調整される</td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">50x50px</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h3 id="mode">モードセレクト</h3>
+            <p class="topic">選曲画面下中央に表示されるosu!Standardやosu!taikoなどのモードを切り替えるインターフェイス｢モードセレクト｣に関連する項目｡</p>
+            <table>
+              <thead>
+                <tr>
+                  <th class="file-name">ファイル名</th>
+                  <th class="note">解説</th>
+                  <th class="origin">原点</th>
+                  <th class="sd-size">推奨SDサイズ</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="file-name">mode-osu.png</td>
+                  <td class="note">osu!モード選択中に中央で点滅する</td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">256x256px</td>
+                </tr>
+                <tr>
+                  <td class="file-name">mode-taiko.png</td>
+                  <td class="note">taikoモード選択中に中央で点滅する</td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">256x256px</td>
+                </tr>
+                <tr>
+                  <td class="file-name">mode-fruits.png</td>
+                  <td class="note">catchモード選択中に中央で点滅する</td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">256x256px</td>
+                </tr>
+                <tr>
+                  <td class="file-name">mode-mania.png</td>
+                  <td class="note">maniaモード選択中に中央で点滅する</td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">256x256px</td>
+                </tr>
+                <tr>
+                  <td class="file-name">mode-osu-med.png</td>
+                  <td class="note">モード選択のドロップダウンで表示</td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">128x128px</td>
+                </tr>
+                <tr>
+                  <td class="file-name">mode-taiko-med.png</td>
+                  <td class="note">モード選択のドロップダウンで表示</td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">128x128px</td>
+                </tr>
+                <tr>
+                  <td class="file-name">mode-fruits-med.png</td>
+                  <td class="note">モード選択のドロップダウンで表示</td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">128x128px</td>
+                </tr>
+                <tr>
+                  <td class="file-name">mode-mania-med.png</td>
+                  <td class="note">モード選択のドロップダウンで表示</td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">128x128px</td>
+                </tr>
+                <tr>
+                  <td class="file-name">mode-osu-small.png</td>
+                  <td class="note">selection-mode.pngの上に表示される</td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">32x32px</td>
+                </tr>
+                <tr>
+                  <td class="file-name">mode-taiko-small.png</td>
+                  <td class="note">selection-mode.pngの上に表示される</td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">32x32px</td>
+                </tr>
+                <tr>
+                  <td class="file-name">mode-fruits-small.png</td>
+                  <td class="note">selection-mode.pngの上に表示される</td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">32x32px</td>
+                </tr>
+                <tr>
+                  <td class="file-name">mode-mania-small.png</td>
+                  <td class="note">selection-mode.pngの上に表示される</td>
+                  <td class="origin">中央</td>
+                  <td class="sd-size">32x32px</td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer"></div>
+
+</body>
+
+</html>

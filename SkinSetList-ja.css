@@ -1,0 +1,353 @@
+body {
+  font-family: Exo\ 2, Helvetica Neue, Tahoma, Arial, Hiragino Kaku Gothic ProN, Meiryo, Microsoft YaHei, Apple SD Gothic Neo, sans-serif;
+  font-size: 16px;
+  height: 100%;
+  margin: 0;
+  line-height: 1.25;
+  color: #555;
+  background: url("images/backgrounds/page-333.png");
+  background-color: #fff;
+  flex-direction: column;
+  background-attachment: fixed;
+}
+
+.header {
+  position: relative;
+  margin-bottom: -5px;
+  box-sizing: border-box;
+}
+
+.header_bg_triangles {
+  height: 90px;
+  background: url("images/layout/nav-backgrounds/triangles-combined.png");
+}
+
+.header_bg_overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, rgba(204, 102, 0, 0.9), #c60 75%, #c60);
+}
+
+.header_center {
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
+  flex: none;
+  width: 100%;
+  max-width: 1000px;
+  position: absolute;
+}
+
+.main {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.main_title {
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 1000px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.main_title_space {
+  padding-left: 40px;
+  padding-right: 40px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .25);
+  background-image: url("images/headers/wiki.jpg");
+  height: 125px;
+  padding-bottom: 0;
+  background-size: cover;
+  background-position: 50%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-color: #333;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.main_content {
+  padding: 20px 40px;
+  box-shadow: inset 0 2px 3px -1px rgba(0, 0, 0, .25);
+  background-color: #333;
+  color: #fff;
+  font-size: 14px;
+  width: calc(100% - 40px);
+  max-width: 1000px;
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
+  flex: none;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.main_content_space {
+  margin-top: 20px;
+  display: flex;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.main_content_space_index {
+  margin-right: 10px;
+  width: 190px;
+  flex: none;
+  position: sticky;
+  box-sizing: border-box;
+}
+
+.main_content_space_content {
+  flex: 1;
+  min-width: 0;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.footer {
+  height: 49px;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, .75);
+  background-color: rgba(0, 0, 0, .6);
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, .6) 0, transparent 4px);
+  color: #ccc;
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+  flex: none;
+  padding: 10px 0 5px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.main_content_space_index_title {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  bottom: auto;
+  width: auto;
+  padding-top: 10px;
+  padding-right: 10px;
+  box-sizing: border-box;
+}
+
+.main_content_space_index_index {
+  padding-left: 0;
+  list-style: none;
+  font-size: 15px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.contents {
+  text-transform: uppercase;
+  margin: 0 0 5px;
+  padding: 0;
+  color: #fff;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700
+}
+
+.main_content_space_content_space {
+  font-family: Noto Sans, sans-serif;
+  line-height: 1.35;
+  color: inherit;
+  padding: 10px 20px 0;
+  font-size: 14px;
+  word-wrap: break-word;
+  position: relative;
+  box-sizing: border-box;
+}
+
+#hello {
+  margin: -5px -20px 10px;
+}
+
+h2 {
+  font-size: 26px;
+  margin: 50px -20px 10px;
+  color: #fff;
+  font-family: Exo\ 2, Helvetica Neue, Tahoma, Arial, Hiragino Kaku Gothic ProN, Meiryo, Microsoft YaHei, Apple SD Gothic Neo, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.1;
+  position: relative;
+  box-sizing: border-box;
+}
+
+h3 {
+  font-size: 20px;
+  margin: 50px -20px 10px;
+  font-family: Exo\ 2, Helvetica Neue, Tahoma, Arial, Hiragino Kaku Gothic ProN, Meiryo, Microsoft YaHei, Apple SD Gothic Neo, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #f9c;
+  line-height: 1.1;
+  position: relative;
+  box-sizing: border-box;
+}
+
+a {
+  outline-style: none;
+  color: #ccc;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 5px;
+  transition: color 80ms linear;
+  background-color: transparent;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.index-link {
+  outline-style: none;
+  font-size: 12px;
+  color: #ccc;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 5px;
+  transition: color 80ms linear;
+  background-color: transparent;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.link-table {
+  padding: 0 0 0 10px;
+  list-style: none;
+  font-size: 15px;
+  margin-bottom: 0;
+  margin-top: 0;
+  position: relative;
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0 0 10px;
+  word-break: keep-all;
+}
+
+.topic {
+  margin-bottom: 1.5em;
+  line-height: 1.5;
+}
+
+.file-name {
+  text-align: right;
+  min-width: 50px;
+}
+
+.origin {
+  min-width: 30px;
+}
+
+.note {
+  min-width: 280px;
+  max-width: 400px;
+}
+
+.sd-size {
+  min-width: 50px;
+  max-width: 100px;
+}
+
+table {
+  font-family: Exo\ 2, Helvetica Neue, Tahoma, Arial, Hiragino Kaku Gothic ProN, Meiryo, Microsoft YaHei, Apple SD Gothic Neo, sans-serif;
+  overflow-x: auto;
+  margin-bottom: 20px;
+  background-color: transparent;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  max-width: 720px;
+}
+
+th {
+  text-align: center;
+  border-top: none;
+  border-bottom: 2px solid #fc2;
+  font-weight: 700;
+  padding: 5px 5px 1px;
+}
+
+td {
+  text-align: center;
+  border-top: 1px solid rgba(255, 204, 34, .5);
+  padding: 8px 2px;
+  word-break: keep-all;
+}
+
+code {
+  border-radius: 4px;
+  background-color: rgb(43, 43, 43);
+  border: 1px solid #111;
+  color: #6cf;
+  padding: 0px 3px;
+  margin: 0px 2px;
+  font-size: inherit;
+  font-family: Menlo, Monaco, Consolas, Courier New, monospace;
+}
+
+b {
+  font-weight: bold;
+  border-radius: 5px;
+  background-color: rgb(180, 180, 180);
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 0px 0px;
+  margin: 0px 2px;
+  font-size: inherit;
+  font-family: Menlo, Monaco, Consolas, Courier New, monospace;
+}
+
+.pagetop {
+  position: fixed;
+  bottom: 60px;
+  right: 20px;
+  z-index: 10;
+  transition: bottom 0.3s;
+  font-size: inherit;
+  font-weight: inherit;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+.pagetop_link {
+  border-radius: 5%;
+  width: 100px;
+  height: 40px;
+  background: #c60;
+  text-decoration: none;
+  margin-bottom: 0px;
+}
+
+span {
+  padding: 19px;
+  font-size: 30px;
+  color: #fff;
+}
+
+.web-link {
+  color: #fc2;
+}
+
+.intro-ul {
+  padding-left: 15px;
+}
+
+.intro-li{
+  margin-left: -8px;
+}
