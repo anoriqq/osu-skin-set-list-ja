@@ -351,3 +351,19 @@ span {
 .intro-li{
   margin-left: -8px;
 }
+
+.Annotation-ul{
+  padding-left: 0px;
+  list-style-type: none;
+}
+
+.footer-row{
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-link{
+  text-decoration: none;
+  margin: 0px 15px;
+}
