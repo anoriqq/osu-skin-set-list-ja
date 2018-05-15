@@ -5,7 +5,7 @@ body {
   margin: 0;
   line-height: 1.25;
   color: #555;
-  background: url("images/backgrounds/page-333.png");
+  background: url("res/images/backgrounds/page-333.png");
   background-color: #fff;
   flex-direction: column;
   background-attachment: fixed;
@@ -19,7 +19,7 @@ body {
 
 .header_bg_triangles {
   height: 90px;
-  background: url("images/layout/nav-backgrounds/triangles-combined.png");
+  background: url("res/images/layout/nav-backgrounds/triangles-combined.png");
 }
 
 .header_bg_overlay {
@@ -63,7 +63,7 @@ body {
   padding-left: 40px;
   padding-right: 40px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, .25);
-  background-image: url("images/headers/wiki.jpg");
+  background-image: url("res/images/headers/wiki.jpg");
   height: 125px;
   padding-bottom: 0;
   background-size: cover;
